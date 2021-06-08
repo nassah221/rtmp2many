@@ -10,7 +10,10 @@ Stream a video file to multiple RTMP publish points using GStreamer bindings for
 5. Having created multiple endpoints _live1_ & _live2_, start the nginx server by executing _start.bat_
 
 ## Publishing to the Endpoints
-`cargo r -- -u rtmp://127.0.0.1/live1/stream1 rtmp://127.0.0.1/live2/stream2 -f "path:\\to\\video\\file"`
+1. For slimmed main
+    * `cargo r --bin main -- -u rtmp://127.0.0.1/live1/stream1 rtmp://127.0.0.1/live2/stream2 -f "path:\\to\\video\\file"`
+2. For verbose main
+    * `cargo r --bin verbose_main -- -u rtmp://127.0.0.1/live1/stream1 rtmp://127.0.0.1/live2/stream2 -f "path:\\to\\video\\file"`
 
 ## Streaming from the Endpoints
 Use `gst-launch` or VLC Media Player to stream the video
