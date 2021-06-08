@@ -19,3 +19,7 @@ Stream a video file to multiple RTMP publish points using GStreamer bindings for
 Use `gst-launch` or VLC Media Player to stream the video
  * `gst-launch-1.0 uridecodebin uri="rtmp://127.0.0.1/live1/stream1" name=src ! queue ! videoconvert ! autovideosink src. ! queue ! audioconvert ! audioresample ! autoaudiosink`
  * `gst-launch-1.0 uridecodebin uri="rtmp://127.0.0.1/live2/stream2" name=src ! queue ! videoconvert ! autovideosink src. ! queue ! audioconvert ! audioresample ! autoaudiosink`
+
+***
+## Demo
+![alt text](https://github.com/nassah221/rtmp2many/blob/main/assets/demo.gif "Project demo")
